@@ -17,10 +17,12 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+ The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream 
+at The University of Texas at Austin. This code is shared for demonstration purposes and should not be considered a product -- 
+	it is for entertainment purposes only. Any user of this code does so at their own risk. Members of the DIY Stream, FRI, 
+	and The University of Texas system are not liable for anything related to this code.
  
 Known Issues:
-blah, blah, blah, blah
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
@@ -50,10 +52,24 @@ function reset_myCanvas(){
 	myCanvas.width = myCanvas.width; //makes width equal 
 }
 function name_myCanvas(){
-	var myCanvas_canvas = document.getElementById("myCanvas"); sets up canvas
-	
+	var myCanvas_canvas = document.getElementById("myCanvas"); //sets up canvas
+	var myCanvas_context = myCanvas_canvas.getContext("2d"); //defines drawing
+	myCanvas_context.font = "24px Georgia"; // sets font
+	myCanvas_context.strokeText("Noora Naser", 0, 75) //sets coordinates for name
+}
 
+function image_myCanvas(){
+	var myCanvas_canvas = document.getElementById("myCanvas"); //defines canvas 
+	var myCanvas_context = myCanvas_canvas.getContext("2d"); //defines drawing
+	var img = new Image(); // defines image
 
+	img.onload = function (){
+	myCanvas_context/drawImage(img, 0, 0, 100, 150);
+	}
+
+	img.scr
+
+}
 	
 </script>
 
@@ -91,6 +107,15 @@ function name_myCanvas(){
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
+<p> Image: </p>
+<img id = "put in image" scr= "image link
+
+<canvas id = "myCanvas" width = "300" height= "150" styles = "border:1px solid #000000; '> </div>canvas> // draws border
+		<a onclick = "draw_myCanvas();" class= "w3-btn w3-grey w3-round"> // button to draw rectangle
+		<a onclick = "reset_myCanvas();" class= "w3-btn w3-grey w3-round"> // button to reset canvas
+		<a onclick = "image_myCanvas();" class= "w3-btn w3-grey w3-round"> //button to upload image
+		<a onclick = "name_myCanvas();" class= "w3-btn w3-grey w3-round"> //button to write name
+			
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
 </footer>
