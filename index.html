@@ -1,3 +1,4 @@
+
 <!DOCTYPE html> 
 <html> 
 <!-- The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only.  Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.
@@ -35,7 +36,31 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
       <link rel="stylesheet" href="w3-colors-flat.css">
    </head> 
 
+	<body>
+<div id="header" class="w3-container w3-flat-carrot">
+	<h1>App6---HTML5-Canvas</h1>
+</div>
+	
+<div id="content" class="w3-container">
+	<p>image</p>
+		
+	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+ 	
+	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
+<p> Image: </p>
+<img id = "nature" scr="https://images.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg" width="300">
+
+<canvas id = "myCanvas" width = "300" height= "150" style="border:1px solid #000000;"> </canvas><br><br><!--draws border-->
+		<a onclick= "draw_myCanvas();" class= "w3-btn w3-pink w3-round"> Click to Draw Rectangle </a> <!--button to draw rectangle-->
+		<a onclick= "reset_myCanvas();" class= "w3-btn w3-pink w3-round"> Click to Reset </a> <!--button to reset canvas-->
+		<a onclick= "image_myCanvas();" class= "w3-btn w3-pink w3-round"> Click to Upload Image </a> <!--button to upload image-->
+		<a onclick= "name_myCanvas();" class= "w3-btn w3-pink w3-round"> click to write name </a> <!--button to write name-->
+		
+<footer class="w3-bottom w3-container w3-flat-pink">
+	<p>DIY!</p>
+</footer>
+	
 <script>
 var docMod = document.lastModified; // loads last modified time stamp into docMod variable
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
@@ -67,12 +92,10 @@ function image_myCanvas(){
 	myCanvas_context.drawImage(img, 0, 0, 100, 150);
 	}
 
-	img.src = "https://images.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg";
+	img.scr = "https://www.google.com/imgres?q=beautiful%20nature%20images%20pictures&imgurl=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F36478%2Famazing-beautiful-beauty-blue.jpg%3Fcs%3Dsrgb%26dl%3Dpexels-pixabay-36478.jpg%26fm%3Djpg&imgrefurl=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fnatural%2F&docid=dwm0OYbiSD8M7M&tbnid=LdFyydNIFOOZsM&vet=12ahUKEwjylPP2zuiMAxWKhIkEHQPCNrcQM3oFCIYBEAA..i&w=1920&h=1252&hcb=2&ved=2ahUKEwjylPP2zuiMAxWKhIkEHQPCNrcQM3oFCIYBEAA"
 
-}
-
+}	
 </script>
-
 
 <style>	
 .body {
@@ -94,30 +117,6 @@ function image_myCanvas(){
 }
 </style>
 
-<body>
-<div id="header" class="w3-container w3-flat-carrot">
-	<h1>App6---HTML5-Canvas</h1>
-</div>
-	
-<div id="content" class="w3-container">
-	<p>Nature Image</p>
-		
-	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
- 	
-	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
-
-<p> Image: </p>
-<img id = "put in image" src= "https://images.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg";
-
-<canvas id = "myCanvas" width = "300" height= "150" style="border:1px solid #000000;"> </canvas> <!--draws border-->
-		<a onclick= "draw_myCanvas();" class= "w3-btn w3-pink w3-round"> Click to Draw Rectangle </a> <!--button to draw rectangle-->
-		<a onclick= "reset_myCanvas();" class= "w3-btn w3-pink w3-round"> Click to Reset </a> <!--button to reset canvas-->
-		<a onclick= "image_myCanvas();" class= "w3-btn w3-pink w3-round"> Click to Upload Image </a> <!--button to upload image-->
-		<a onclick= "name_myCanvas();" class= "w3-btn w3-pink w3-round"> click to write name </a> <!--button to write name-->
-			
-<footer class="w3-bottom w3-container w3-flat-pink">
-	<p>DIY!</p>
-</footer>
-
 </body>
 </html>
+
