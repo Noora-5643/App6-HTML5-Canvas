@@ -29,7 +29,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 -->
 	
    <head> 
-      <title>App6---HTML5-Canvas</title>  
+      <title>App6---HTML5-Canvas</title> 
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="apple-mobile-web-app-capable" content="yes">
       <link rel="stylesheet" href="w3.css">
@@ -55,7 +55,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<a onclick= "draw_myCanvas();" class= "w3-btn w3-pink w3-round"> Click to Draw Rectangle </a> <!--button to draw rectangle-->
 		<a onclick= "reset_myCanvas();" class= "w3-btn w3-pink w3-round"> Click to Reset </a> <!--button to reset canvas-->
 		<a onclick= "image_myCanvas();" class= "w3-btn w3-pink w3-round"> Click to Upload Image </a> <!--button to upload image-->
-		<a onclick= "name_myCanvas();" class= "w3-btn w3-pink w3-round"> click to write name </a> <!--button to write name-->
+		<a onclick= "name_myCanvas();" class= "w3-btn w3-pink w3-round"> Click to Write Name </a> <!--button to write name-->
 		
 <footer class="w3-bottom w3-container w3-flat-pink">
 	<p>DIY!</p>
@@ -89,7 +89,7 @@ function image_myCanvas(){
 	var img = new Image(); // defines image
 
 	img.onload = function (){
-	myCanvas_context.drawImage(img, 0, 0, 300, 150);
+	myCanvas_context.drawImage(img, 0, 0, 300, 150); //
 	}
 
 	img.src = "https://images.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg"
