@@ -67,24 +67,25 @@ var docMod = document.lastModified; // loads last modified time stamp into docMo
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
-function draw_myCanvas(){
+function draw_myCanvas(){ //this will set up the rectangle
 	var myCanvas_canvas = document.getElementById("myCanvas") //sets up canvas
 	var myCanvas_context = myCanvas_canvas.getContext("2d"); //defines drawing
-	myCanvas_context.fillRect(0,0,300,150); //fills in rectangle
+	myCanvas_context.fillStyle = "pink"; //this fills in the rectangle with pink
+	myCanvas_context.fillRect(0,0,300,150); //fills in therectangle
 }
 
-function reset_myCanvas(){
+function reset_myCanvas(){ //this will set the function to clear the canvas
 	var myCanvas_canvas = document.getElementById("myCanvas"); //sets up canvas
-	myCanvas.width = myCanvas.width; //makes width equal 
+	myCanvas.width = myCanvas.width; //makes width equal so that it can reset
 }
-function name_myCanvas(){
+function name_myCanvas(){ //this will create the function to draw my name
 	var myCanvas_canvas = document.getElementById("myCanvas"); //sets up canvas
 	var myCanvas_context = myCanvas_canvas.getContext("2d"); //defines drawing
 	myCanvas_context.font = "24px Georgia"; // sets font
 	myCanvas_context.strokeText("Noora Naser", 0, 75) //sets up drawing my name
 }
 
-function image_myCanvas(){
+function image_myCanvas(){ //this will set the function to upload the image
 	var myCanvas_canvas = document.getElementById("myCanvas"); //defines canvas 
 	var myCanvas_context = myCanvas_canvas.getContext("2d"); //defines drawing
 	var img = new Image(); // defines image
